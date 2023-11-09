@@ -1,0 +1,57 @@
+.parent {
+    width: 100%;
+    height: auto;
+    margin-top: 7vh;
+    display: flex;
+    flex-flow: column nowrap;
+
+    /* background-color: red; */
+}
+
+.head >p{
+    margin-top: 1vh;
+
+}
+
+.filters {
+    width: 100%;
+    display: flex;
+    margin-top: 5vh;
+    gap: 2vw;
+    position: relative;
+    z-index: 2;
+}
+
+.filters > div:nth-child(1) {
+    flex-grow: 2;
+    /* background-color: red; */
+   
+}
+
+.customFilter {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-around;
+    background-color: aqua;
+}
+
+.cars_list {
+    width: 100%;
+}
+
+.cars_notFound {
+    margin-top: 10vh;
+    text-align: center;
+    font-size: clamp(20px, 4vh + 2px, 50px);
+
+}
+
+.cars_list {
+    margin-top: 10vh;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    place-content: center;
+    column-gap: 2.5vw;
+    row-gap: 5vh;
+    height: auto;
+}

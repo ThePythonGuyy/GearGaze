@@ -1,0 +1,8 @@
+.ant-select-selector{
+    /* display: none !important; */
+    background-color: rgba(239, 239, 239, 1) !important;
+    outline: none !important;
+    border: 1px solid rgb(240, 240, 240) !important;
+    background-color: red ;
+    padding: 17px 35px !important;
+}

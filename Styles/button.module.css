@@ -1,0 +1,20 @@
+.button_blue {
+    padding: 8px 10px;
+    border-radius: 13px;
+    outline: none;
+    border: none;
+    background-color: var(--blue);
+    color: #fff;
+    font-weight: 600;
+    position: relative;
+}
+
+.button_white {
+    padding: 8px 10px;
+    border-radius: 13px;
+    outline: none;
+    border: none;
+    background-color: var(--white);
+    color: rgba(0, 0, 0, 0.7);
+    font-weight: 600;
+}

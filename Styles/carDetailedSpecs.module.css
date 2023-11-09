@@ -1,0 +1,122 @@
+.moreSpecsDialogBox {
+    position: fixed;
+    inset: 0;
+    z-index: 50;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.moreSpecsDialog {
+    height: 90vh;
+    width: 75vw;
+    margin: auto auto;
+    position: relative;
+    top: 5vh;
+    background-color: white;
+    border-radius: 15px;
+    padding: 4vh 2vw;
+    display: flex;
+    animation: fadeIn 1s;
+}
+
+.carModelImage {
+    width: 42.5%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: auto;
+}
+
+.carDisplayBg {
+    width: 100%;
+    height: 40%;
+    position: relative;
+}
+
+.carModelView {
+    width: 80%;
+    height: 190px;
+    top: calc((130px - 95px) / 2);
+    margin: auto;  
+    position: relative;  
+}
+
+.carModelAngleViews {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    height: 100%;
+    /* background-color: red; */
+}
+
+.carModelAngleViews > div {
+    display: inline-block;
+    position: relative;
+    width: 180px;
+    height: 110px;
+    padding: 5px;
+    margin: auto auto;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+}
+
+.carModelSpecs {
+    width: 52.5%;
+    height: 100%;
+    margin: auto auto;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    padding: 0 2vw;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.closeIcon{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    /* opacity: 0.7; */
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.carModelSpecs > h3 {
+    text-transform: capitalize;
+    text-align: center;
+    margin: 1.2vh 0;
+}
+
+.carModelSpecs > div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    /* justify-content: space-between; */
+    padding: 3vh 0;
+}
+
+.carModelSpecs > div > div {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 1vh 0;
+    /* border-bottom: 1px solid rgba(0, 0, 0, 0.14); */
+}
+
+.carModelSpecs > div > div:last-child {
+    border: none;
+}
+
+.carModelSpecs > div > div > p:nth-child(1) {
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+.carModelSpecs > div > div > p:nth-child(2) {
+    text-transform: capitalize;
+    /* font-weight: 600; */
+}

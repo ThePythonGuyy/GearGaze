@@ -1,0 +1,47 @@
+.main {
+  width: 100%;
+  display: flex;
+  /* overflow: hidden; */
+}
+
+.intro {
+  width: 40%;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column nowrap;
+  /* align-items: center; */
+  padding-top: 10vh;
+  gap: 4vh;
+  padding-right: 6vw;
+
+  /* background-color: blue; */
+}
+
+.intro_title {
+  line-height: 1.5;
+  font-size: 52px;
+  font-size: clamp(20px, 4.6vw + 2px, 57px);
+  letter-spacing: 3px;
+  font-family: 'tegar';
+}
+
+.intro_desc {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.intro_img_blk {
+  position: relative;
+  width: 60%;
+  /* margin-top: 14vh; */
+}
+
+.intro_img {
+  margin-top: 5vh;
+}
+
+.intro_img_bg {
+  position: absolute;
+  top: -130px;
+  left: 50px;
+  z-index: -1;
+}

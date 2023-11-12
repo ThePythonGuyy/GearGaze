@@ -5,8 +5,14 @@ import { fetchCars } from "@/utils";
 import CarCard from "./CarCard";
 // import { useState } from "react";
 
-const Catalogue = async () => {
-  const allCars = await fetchCars();
+const Catalogue = async ({searchParams}) => {
+  const allCars = await fetchCars({
+    manufacturer: searchParams?.manufacturer || '',
+    year: searchParams?.year || 2022,
+    fuel: searchParams?.fuel || '',
+    limit: searchParams?.limit || 9,
+    model: searchParams?.model || '',
+  });
   console.log(allCars);
   const isDataEmpty = !Array.isArray(allCars) || allCars.length < 1 || !allCars;
 

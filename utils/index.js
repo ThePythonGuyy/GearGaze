@@ -1,10 +1,15 @@
 import axios from "axios";
 
-export async function fetchCars() {
+export async function fetchCars(filters) {
   const options = {
     method: "GET",
     url: "https://cars-by-api-ninjas.p.rapidapi.com/v1/cars",
-    params: { make: "bmw" , limit: '5 '},
+    params: { make: filters.manufacturer || 'bmw' , 
+              limit: filters.limit,
+              fuel: filters.fuel,
+              year: filters.year,
+              model: filters.model
+            },
     headers: {
       "X-RapidAPI-Key": "7dc50af0c2mshd76d098dfa43da0p1fc62bjsna1ff5920361c",
       "X-RapidAPI-Host": "cars-by-api-ninjas.p.rapidapi.com",

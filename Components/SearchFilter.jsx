@@ -10,7 +10,7 @@ const SearchFilter = () => {
   const [model, setModel] = useState("");
   const router = useRouter();
   const handleSearch = (e) => {
-    // e.preventDefault();
+    e.preventDefault();
     if (manufacturer === "" && model === "") {
       return alert("Please fill the search bar");
     }
@@ -20,20 +20,16 @@ const SearchFilter = () => {
   const updateSearchParams = (model, manufacturer) => {
     const searchParams = new URLSearchParams(window.location.search);
 
-    // if (model) {
-    //   searchParams.set("model", model);
-    // } else {
-    //   searchParams.delete("model");
-    // }
+    if (model) {
+      searchParams.set("model", model);
+    } else {
+      searchParams.delete("model");
+    }
 
     if (manufacturer) {
       searchParams.set("manufacturer", manufacturer);
     } else {
       searchParams.delete("manufacturer");
-    }
-
-    if (true) {
-      searchParams.set('helo', "hello")
     }
 
     const newPathname = `${

@@ -4,7 +4,7 @@
   display: flex;
   flex-flow: column nowrap;
   gap: 8px;
-  height: auto;
+  height: 320px;
   border-radius: 12px;
   transition: box-shadow 0.3s ease-in;
   position: relative;
@@ -36,6 +36,7 @@
   /* background: #e0e0e0; */
   box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
   display: inline;
+  visibility: hidden;
 }
 
 .carRentRupeeSymbol {

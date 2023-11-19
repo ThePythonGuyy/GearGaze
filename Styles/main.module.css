@@ -20,9 +20,9 @@
 .intro_title {
   line-height: 1.5;
   font-size: 52px;
-  font-size: clamp(20px, 4.6vw + 2px, 57px);
+  font-size: clamp(20px, 4.2vw + 2px, 57px);
   letter-spacing: 3px;
-  font-family: 'tegar';
+  font-family: 'vintura';
 }
 
 .intro_desc {

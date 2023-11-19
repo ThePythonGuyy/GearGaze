@@ -36,7 +36,7 @@ const SearchFilter = () => {
       window.location.pathname
     }?${searchParams.toString()}`;
     console.log(newPathname);
-    router.push(newPathname);
+    router.push(newPathname, {scroll: false});
   };
 
   const SearchButton = () => (

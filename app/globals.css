@@ -11,6 +11,7 @@
     --white: #fff;
     /* --lightBlue: rgba(202, 240, 248, 0.5); */
     --lightBlue: rgba(227, 242, 253, 0.65);
+    --grey2 : #F0F0F0;
 }
 
 
@@ -40,8 +41,8 @@ button{
 }
 
 @font-face {
-  font-family: tegar;
-  src: url('/fonts/Tedgar.ttf');
+  font-family: vintura;
+  src: url('/fonts/Vintura-Regular.ttf');
   font-style: normal;
   font-weight: normal;
 }
@@ -50,6 +51,4 @@ button{
   from { opacity: 0; }
     to { opacity: 1; }
 }
-
-
 

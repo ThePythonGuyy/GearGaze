@@ -32,7 +32,10 @@
     flex-grow: 1;
     display: flex;
     justify-content: space-around;
-    background-color: aqua;
+    /* background-color: aqua; */
+}
+.customFilter > div {
+    width: 25%;
 }
 
 .cars_list {

@@ -5,7 +5,7 @@ import Image from "next/image";
 import { manufacturers } from "@/Constants/details";
 import { Select } from "antd";
 import styles from "@/Styles/manufacturer.module.css";
-import '@/Styles/antOverrides.css'
+import "@/Styles/antOverrides.css";
 
 const SearchManufacturer = ({ manufacturer, setManufacturer }) => {
   const [query, setQuery] = useState("");
@@ -36,50 +36,57 @@ const SearchManufacturer = ({ manufacturer, setManufacturer }) => {
             <Image src="/car-logo.svg" width={20} height={20} alt="helo" />
           </Combobox.Button>
 
-          
-
-          <Combobox.Input 
-          className={styles.combobox_input}
-          placeholder="Volkswagen"
-          displayValue={(item) => item}
-          onChange={(e) => setQuery(e.target.value)} 
+          <Combobox.Input
+            className={styles.combobox_input}
+            placeholder="Volkswagen"
+            displayValue={(item) => item}
+            onChange={(e) => setQuery(e.target.value)}
           />
 
           <Combobox.Options className={styles.combobox_options}>
-            {filteredManufacturers.length === 0 && query != '' ? (
-              <div>
-                Nothing Found.
-              </div>
+            {filteredManufacturers.length === 0 && query != "" ? (
+              <div>Nothing Found.</div>
             ) : (
               filteredManufacturers.map((item) => (
-                <Combobox.Option 
+                <Combobox.Option
                   key={item}
-                  className={({active}) => `${styles.combobox_optionDefault} ${
-                    active ? styles.combobox_optionActive : styles.combobox_optionInActive
-                  }`}
+                  className={({ active }) =>
+                    `${styles.combobox_optionDefault} ${
+                      active
+                        ? styles.combobox_optionActive
+                        : styles.combobox_optionInActive
+                    }`
+                  }
                   value={item}
-                  >
-                    {({selected, active}) => (
-                      <>
-                        <span
-                          className={({active}) => `${active ? styles.combobox_optionValueActive : styles.combobox_optionInactive}`}
-                        >
-                          {item}
+                >
+                  {({ selected, active }) => (
+                    <>
+                      <span
+                        className={({ active }) =>
+                          `${
+                            active
+                              ? styles.combobox_optionValueActive
+                              : styles.combobox_optionInactive
+                          }`
+                        }
+                      >
+                        {item}
+                      </span>
+                      {selected && (
+                        <span className={styles.optionTick}>
+                          <Image
+                            src="/icons/greenTick.svg"
+                            width={25}
+                            height={25}
+                            alt="tick"
+                          />
                         </span>
-                        { selected &&
-                        <span
-                          className={styles.optionTick}
-                        >
-                          <Image src="/icons/greenTick.svg" width={25} height={25} alt="tick" />
-                        </span>
-}
-                      </>
-                    )}
-                  </Combobox.Option>
+                      )}
+                    </>
+                  )}
+                </Combobox.Option>
               ))
-            )
-          }
-          
+            )}
           </Combobox.Options>
         </div>
       </Combobox>

@@ -26,6 +26,8 @@
     outline: 1px solid rgba(239, 239, 239); 
     border-radius: 0 15px 15px 0;
     padding-left: 40px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
 }
 
 .searchByModel input:focus {

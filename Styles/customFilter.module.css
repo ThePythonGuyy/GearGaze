@@ -1,0 +1,105 @@
+.listbox_container {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+ 
+}
+
+.listbox {
+  width: inherit;
+  height: inherit;
+  border-radius: inherit;
+
+}
+
+.listboxWrap {
+    width: inherit;
+    height: 100%;
+    position: relative;
+    border-radius: inherit;
+    background-color: pink;
+}
+.listbox_button {
+  display: flex;
+  position: relative;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: inherit;
+  width: 100%;
+  height: 100%;
+}
+
+.transEnter {
+  transition: all ease-in 100ms;
+}
+
+.transEnterTo {
+  opacity: 1;
+}
+
+.transEnterFrom {
+  opacity: 0;
+}
+
+.transLeave {
+  transition: all ease-out 100ms;
+}
+
+.transLeaveTo {
+  opacity: 1;
+}
+
+.transLeaveFrom {
+  opacity: 0;
+}
+
+.listboxOptions {
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    z-index: 3;
+    top: 120%;
+    overflow-y: auto;
+    background: var(--grey2);
+    border-radius: inherit;
+}
+
+.listboxOptions::-webkit-scrollbar{
+  display: none;
+}
+
+.listbox_optionDefault {
+    height: 5vh;
+    padding: 0 0.5vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    font-size: 12px;
+    padding-left: 1vw;
+}
+
+.listbox_optionActive {
+    background-color: var(--blue);
+    color: white;
+    font-weight: 600;
+}
+
+/* .listbox_optionInactive {
+
+}
+ 
+.listbox_optionValueActive {
+
+}
+
+.listbox_optionInactive {
+
+} */
+
+.optionTick {
+    margin-top: 5px;
+
+}
+

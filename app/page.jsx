@@ -5,9 +5,6 @@ import Head from "next/head";
 export default function Home({ searchParams }) {
   return (
     <div className={styles.main_page}>
-      <Head>
-        <link rel="shortcut icon" href="/facebook.svg" />
-      </Head>
       <Main />
       <Catalogue searchParams={searchParams} />
     </div>

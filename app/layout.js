@@ -8,6 +8,10 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
   title: "Gear Gaze",
   description: "The Ultimate Car Library",
+  icons: {
+    // icon: 'favicon.svg'
+    icon: 'hero.png'
+  }
 };
 
 export default function RootLayout({ children }) {
